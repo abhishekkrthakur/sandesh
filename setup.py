@@ -9,6 +9,7 @@ if __name__ == "__main__":
         version=sandesh.__version__,
         description="sandesh - a simple app to send messages on slack",
         author="Abhishek Thakur",
+        author_email="abhishek4@gmail.com",
         license="MIT License",
         packages=find_packages(),
         include_package_data=True,
