@@ -10,6 +10,7 @@ if __name__ == "__main__":
         description="sandesh - a simple app to send messages on slack",
         author="Abhishek Thakur",
         author_email="abhishek4@gmail.com",
+        url="https://github.com/abhishekkrthakur/sandesh",
         license="MIT License",
         packages=find_packages(),
         include_package_data=True,
