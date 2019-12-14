@@ -4,7 +4,7 @@
  +-+-+-+-+-+-+-+
 
 sandesh (संदेश) in Hindi means message. 
-his is a simple python library to send messages to Slack using webhook urls.
+This is a simple python library to send messages to Slack using webhook urls.
 
 ### Installing
 
