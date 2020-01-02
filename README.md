@@ -63,6 +63,31 @@ import sandesh
 sandesh.send(data, use_raw=True)
 ```
 
+You can also choose to send the notifications to your WhatsApp number. For that you first need to signup for a (free) [Twillio](https://www.twilio.com/whatsapp) account. Once signed up, you will get a `sandbox number`. Copy the `ACCOUNT SID` and `AUTH TOKEN` from your Console > Dashboard > Settings.
+
+To send the messages to your whatsapp number you need to provide the above in conjuction with the sandbox number and the number you want to send the message to, e.g.
+
+```
+log = 'epoch: 0, train_loss: 0.5412, validation_loss: 0.3657'
+sandesh.send(log, whatsapp = True, whatsapp_credentials = (account_sid, auth_token, sandbox_number, to_number))
+```
+
+You may also choose to save the SID and AUTH TOKEN as environment variables. In linux, open a terminal and type:
+```
+sudo nano /etc/environment
+```
+
+and add the below two lines to it:
+```
+TWILIO_ACCOUNT_SID='<your_account_sid>'
+TWILIO_AUTH_TOKEN='<your_auth_token>'
+```
+In case you configure the SID and the AUTH token as environment variables, you can simply call:
+
+```
+sandesh.send(log, whatsapp = True, whatsapp_credentials = (sandbox_number, to_number))
+```
+
 
 This is a simple app that I use to send me notifications of my training processes from home workstation or AWS/GCP machines.
 
