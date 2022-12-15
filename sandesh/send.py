@@ -1,6 +1,5 @@
 """
 A simple slack message sender
-@author: Abhishek Thakur (abhishek4@gmail.com)
 """
 import collections
 import json
