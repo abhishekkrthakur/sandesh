@@ -65,5 +65,3 @@ sandesh.send(data, use_raw=True)
 
 
 This is a simple app that I use to send me notifications of my training processes from home workstation or AWS/GCP machines.
-
-In case of any doubts/troubles, feel free to contact me: abhishek4@gmail.com
